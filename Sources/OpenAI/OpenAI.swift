@@ -195,7 +195,7 @@ extension OpenAI {
     }
 }
 
-public extension OpenAI {
+extension OpenAI {
     
     func buildURL(path: String) -> URL {
         var components = URLComponents()
@@ -212,7 +212,7 @@ extension APIPath {
     
     static let completions = "/v1/completions"
     static let embeddings = "/v1/embeddings"
-    static let chats = "/v1/chat/completions"
+    static let chats = "/openai/v1/chat/completions"
     static let edits = "/v1/edits"
     static let models = "/v1/models"
     static let moderations = "/v1/moderations"
