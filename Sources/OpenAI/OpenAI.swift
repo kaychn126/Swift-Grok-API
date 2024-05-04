@@ -197,7 +197,7 @@ extension OpenAI {
 
 extension OpenAI {
     
-    func buildURL(path: String) -> URL {
+    public func buildURL(path: String) -> URL {
         var components = URLComponents()
         components.scheme = configuration.scheme
         components.host = configuration.host
